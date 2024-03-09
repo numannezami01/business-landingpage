@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="left">
+        <div id="nav">
+          <img height="50px" src="./images/logo.png" alt="" />
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ff3c00"
+            fill-opacity="1"
+            d="M0,32L48,69.3C96,107,192,181,288,202.7C384,224,480,192,576,165.3C672,139,768,117,864,122.7C960,128,1056,160,1152,176C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+        
+        <div id="leftcontent">
+          <h5>Business Loan</h5>
+          <h2>Put your plans into action .</h2>
+          <div id="icons">
+            <div class="iconsdiv">
+              <i class="ri-cloud-line"></i>
+              <h6>online application</h6>
+            </div>
+
+            <div class="iconsdiv">
+              <i class="ri-cash-line"></i>
+              <h6> Up to  ₹.50,000</h6>
+            </div>
+
+            <div   class="iconsdiv">
+              <i class="ri-currency-fill"></i>
+              <h6 id="money">The money is yours in 48h  </h6>
+            </div>
+          </div>
+      
+       
+        </div>
+     
+      </div>
+
+      <div id="right">
+        <div id="formdiv">
+          <form id="loanForm">
+            <div id="step1" class="step">
+              <h2>Personal Information</h2>
+              <input
+                id="contact"
+                type="text"
+                name="contact"
+                placeholder="Mobile Number"
+                required
+              />
+              <button id="nextButton" type="button" onclick="nextStep(1)">
+                Next
+              </button>
+            </div>
+
+            <div id="step2" class="step" style="display: none">
+              <h2>Employment Type</h2>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Self-Employed Business</h3>
+                  <h6>Run a business</h6>
+                </div>
+                <input
+                  value="Self-Employed Business"
+                  type="radio"
+                  name="employmentType"
+                  id=""
+                />
+              </div>
+              <div onclick="nextStep(2)" id="radio1">
+                <div id="inside1">
+                  <h3>Self-Employed Professional</h3>
+                  <h6>Engage in a profession</h6>
+                </div>
+                <input
+                  value="Self-Employed Professional"
+                  type="radio"
+                  name="employmentType"
+                  id=""
+                />
+              </div>
+
+              <button class="step2button" type="button" onclick="prevStep(2)">
+                Previous
+              </button>
+              <button class="step2button" type="button" onclick="nextStep(2)">
+                Next
+              </button>
+            </div>
+
+            <div id="step3" class="step" style="display: none">
+              <h2>Desired Loan Amount</h2>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Below ₹2 Lacs</h3>
+                </div>
+                <input
+                  value="Below ₹2 Lacs"
+                  type="radio"
+                  name="loanAmount"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>₹2 - ₹5 Lacs</h3>
+                </div>
+                <input
+                  value="₹2 - ₹5 Lacs"
+                  type="radio"
+                  name="loanAmount"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>₹5 - ₹10 Lacs</h3>
+                </div>
+                <input
+                  value="₹5 - ₹10 Lacs"
+                  type="radio"
+                  name="loanAmount"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>₹10 - ₹20 Lacs</h3>
+                </div>
+                <input
+                  value="₹10 - ₹20 Lacs"
+                  type="radio"
+                  name="loanAmount"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Above ₹20 Lacs</h3>
+                </div>
+                <input
+                  value="Above ₹20 Lacs"
+                  type="radio"
+                  name="loanAmount"
+                  id=""
+                />
+              </div>
+              <button class="step2button" type="button" onclick="prevStep(2)">
+                Previous
+              </button>
+              <button class="step2button" type="button" onclick="nextStep(4)">
+                Next
+              </button>
+            </div>
+
+            <div id="step4" class="step" style="display: none">
+              <h2>Gross Annual Income?</h2>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Below ₹5 Lacs</h3>
+                </div>
+                <input value="Below ₹5 Lacs" type="radio" name="salary" id="" />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>₹5 - ₹10 Lacs</h3>
+                </div>
+                <input value="₹5 - ₹10 Lacs" type="radio" name="salary" id="" />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>₹10 Lacs - ₹15 Lacs</h3>
+                </div>
+                <input
+                  value="₹10 Lacs - ₹15 Lacs"
+                  type="radio"
+                  name="salary"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Above ₹15 Lacs</h3>
+                </div>
+                <input
+                  value="Above ₹15 Lacs"
+                  type="radio"
+                  name="salary"
+                  id=""
+                />
+              </div>
+              <button class="step2button" type="button" onclick="prevStep(3)">
+                Previous
+              </button>
+              <button class="step2button" type="button" onclick="nextStep(5)">
+                Next
+              </button>
+            </div>
+
+            <div id="step5" class="step" style="display: none">
+              <h2>Current Business City</h2>
+              <div id="step5center">
+                <div class="step5left">
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Delhi</h3>
+                    </div>
+                    <input value="Delhi" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Jaipur</h3>
+                    </div>
+                    <input value="Jaipur" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Mumbai</h3>
+                    </div>
+
+                    <input value="Mumbai" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Hydrabad</h3>
+                    </div>
+                    <input value="Hydrabad" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Rajashthan</h3>
+                    </div>
+                    <input value="Rajashthan" type="radio" name="city" id="" />
+                  </div>
+                </div>
+                <div class="step5right">
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Chennai</h3>
+                    </div>
+                    <input value="chennai" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Bengaluru</h3>
+                    </div>
+                    <input value="Bengaluru" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Pune</h3>
+                    </div>
+                    <input value="Pune" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Kolkata</h3>
+                    </div>
+                    <input value="kolkata" type="radio" name="city" id="" />
+                  </div>
+                  <div id="radio5">
+                    <div id="inside5">
+                      <h3>Bhopal</h3>
+                    </div>
+                    <input value="Bhopal" type="radio" name="city" id="" />
+                  </div>
+                </div>
+              </div>
+
+              <button
+                id="step5btn"
+                class="step2button"
+                type="button"
+                onclick="prevStep(4)"
+              >
+                Previous
+              </button>
+              <button
+                id="step5btn"
+                class="step2button"
+                type="button"
+                onclick="nextStep(6)"
+              >
+                Next
+              </button>
+
+              <a id="viewAllCitiesBtn" href="#" onclick="toggleCityList()"
+                >View All Cities</a
+              >
+              <div id="cityList" class="sidenav">
+                <a href="#" onclick="selectCity('Mumbai')">Mumbai</a>
+                <a href="#" onclick="selectCity('Delhi')">Delhi</a>
+                <a href="#" onclick="selectCity('Bangalore')">Bangalore</a>
+                <!-- Add more cities here -->
+              </div>
+            </div>
+
+            <div id="step6" class="step" style="display: none">
+              <h2>Years in Current Profession</h2>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Under 1 years</h3>
+                </div>
+                <input
+                  value="Under 1 years"
+                  type="radio"
+                  name="companyTenure"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>1 - 2 years</h3>
+                </div>
+                <input
+                  value="1 - 2 years"
+                  type="radio"
+                  name="companyTenure"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>2 - 3 years</h3>
+                </div>
+                <input
+                  value="2 - 3 years"
+                  type="radio"
+                  name="companyTenure"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>3 - 5 years</h3>
+                </div>
+                <input
+                  value="3 - 5 years"
+                  type="radio"
+                  name="companyTenure"
+                  id=""
+                />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Over 5 years</h3>
+                </div>
+                <input
+                  value="Over 5 years"
+                  type="radio"
+                  name="companyTenure"
+                  id=""
+                />
+              </div>
+              <button class="step2button" type="button" onclick="prevStep(5)">
+                Previous
+              </button>
+              <button class="step2button" type="button" onclick="nextStep(7)">
+                Next
+              </button>
+            </div>
+
+            <div id="step7" class="step" style="display: none">
+              <h2>Business Details</h2>
+              <div class="step7center">
+                <div class="parentdropdown">
+                  <h5>Company Type</h5>
+                  <select
+                    placeholder="select your company type"
+                    id="buisnesdetails"
+                    name=""
+                    value=""
+                  >
+                    <option>Proprietorship</option>
+                    <option>Partnership firm</option>
+                    <option>Private Limited Company</option>
+                    <option>Public Limited Company</option>
+                    <option>Limited Liability Prtnership</option>
+                    <option>Director Applying As An Individual</option>
+                    <option>other</option>
+                  </select>
+                </div>
+
+                <div class="parentdropdown">
+                  <h5>Nature of Business</h5>
+                  <select
+                    placeholder="select your company type"
+                    id="buisnesdetails"
+                    name=""
+                    value=""
+                  >
+                    <option>Manufacturer</option>
+                    <option>Trade / Wholesaler</option>
+                    <option>Retailer</option>
+                    <option>Service provider</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+
+                <div class="parentdropdown">
+                  <h5>Industry Type</h5>
+                  <select
+                    placeholder="select your Industry type"
+                    id="buisnesdetails"
+                  >
+                    <option>Commission Agent</option>
+                    <option>Insurance Agent</option>
+                    <option>Antique Dealer</option>
+                    <option>Waste & Scrap Dealer</option>
+                    <option>Arms Dealers or Manufactures</option>
+                    <option>
+                      Film Personalities - TV and Film Industry (Actor / Artist
+                      Producers ) / Film Distributers
+                    </option>
+                    <option>Wine Shops And Exclusive Bar</option>
+                    <option>Private Money Lenders</option>
+                    <option>Lottery business</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+
+                <div class="parentdropdown">
+                  <h5>Sub-Industry Type</h5>
+                  <select
+                    placeholder="select your Industry type"
+                    id="buisnesdetails"
+                  >
+                    <option>Others</option>
+                  </select>
+                </div>
+              </div>
+
+              <button
+                id="step7"
+                class="step2button"
+                type="button"
+                onclick="prevStep(6)"
+              >
+                Previous
+              </button>
+              <button
+                id="step7"
+                class="step2button"
+                type="button"
+                onclick="nextStep(8)"
+              >
+                Next
+              </button>
+            </div>
+
+            <div id="step8" class="step" style="display: none">
+              <h2>Ownership of Residence / Business Place</h2>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Owned by Self / Spouse</h3>
+                </div>
+                <input type="radio" name="" id="" />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Owned by Parents / Siblings</h3>
+                </div>
+                <input type="radio" name="" id="" />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Rented with Family / Stay alone</h3>
+                </div>
+                <input type="radio" name="" id="" />
+              </div>
+              <button
+                id="step8btn"
+                class="step2button"
+                type="button"
+                onclick="prevStep(7)"
+              >
+                Previous
+              </button>
+              <button
+                id="step8btn"
+                class="step2button"
+                type="button"
+                onclick="nextStep(9)"
+              >
+                Next
+              </button>
+            </div>
+
+            <div id="step9" class="step" style="display: none">
+              <h2>Additional loan against assets</h2>
+              <div class="Additional">
+                <p>
+                  Would you like to have an option for additional financing at a
+                  lower interest rate by pledging your assets (Property, Gold or
+                  Car) ?
+                </p>
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>Yes</h3>
+                </div>
+                <input type="radio" name="" id="" />
+              </div>
+              <div id="radio1">
+                <div id="inside1">
+                  <h3>No</h3>
+                </div>
+                <input type="radio" name="" id="" />
+              </div>
+
+              <button
+                id="step8btn"
+                class="step2button"
+                type="button"
+                onclick="prevStep(8)"
+              >
+                Previous
+              </button>
+              <button
+                id="step8btn"
+                class="step2button"
+                type="button"
+                onclick="nextStep(10)"
+              >
+                Submit
+              </button>
+            </div>
+            <div id="step10" class="step" style="display: none">
+                <h2>Thank you </h2>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Script.js"></script>
+  </body>
+</html>

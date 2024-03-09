@@ -1,0 +1,759 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: aqua; */
+}
+#nav {
+  position: relative;
+  padding: 10px;
+  height: 4rem;
+  width: 16rem;
+  /* background-color: yellow; */
+}
+#left {
+  position: relative;
+  height: 100%;
+  width: 60%;
+  /* background-color: red; */
+}
+
+#leftcontent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  bottom: 40%;
+  left: 20%;
+  height: 40vh;
+  width: 50vw;
+  /* background-color: aqua; */
+}
+#leftcontent h5 {
+  position: relative;
+  font-size: 15px;
+  color: #000;
+  font-family: gilroy;
+}
+#leftcontent h2 {
+  position: relative;
+  color: #0031c5;
+  font-size: 50px;
+  line-height: 1;
+  font-family: gilroy;
+  width: 30vw;
+}
+#icons {
+  position: relative;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 15vh;
+  width: 35vw;
+  /* background-color: rgba(0, 0, 255, 0.679); */
+}
+.iconsdiv {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 15vh;
+  width: 10vw;
+  /* background-color: chartreuse; */
+}
+.iconsdiv i {
+  font-size: 40px;
+  color: #000;
+}
+.iconsdiv h6 {
+  position: relative;
+  font-weight: 100;
+  width: 3vw;
+  font-family: gilroy;
+  font-size: 14px;
+}
+
+#money {
+  position: relative;
+  text-align: right;
+  width: 20vh;
+}
+
+#left svg {
+  position: relative;
+  height: 50vh;
+  top: 235px;
+  /* left:1 px */
+}
+
+#svgup {
+  position: relative;
+  bottom: 60px;
+  height: 44vh;
+}
+
+#right {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  /* background-color: #521401; */
+}
+
+#formdiv {
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 29vw;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.117);
+}
+
+#step1 {
+  position: relative;
+  /* background-color: red; */
+  height: 20v;
+}
+#step1 h2 {
+  position: relative;
+  color: #ff3c00;
+  font-family: gilroy;
+  font-size: 20px;
+  font-weight: 100;
+}
+#step1 input {
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  outline: none;
+  position: relative;
+  height: 5vh;
+  width: 12vw;
+}
+#step1 button {
+  position: relative;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  background-color: #ff3c00;
+  font-family: gilroy;
+  font-size: 15px;
+  height: 5vh;
+  width: 8vw;
+}
+#radio1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  height: 8vh;
+  width: 24vw;
+  border-radius: 5px;
+  /* background-color: red; */
+  border: 1px solid rgba(0, 0, 0, 0.341);
+}
+#inside1 {
+  position: relative;
+  padding: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100%;
+  width: 260px;
+  /* background-color: blue; */
+}
+#inside1 h3 {
+  position: relative;
+  color: #000;
+  font-weight: 700;
+}
+#inside1 h6 {
+  position: relative;
+  opacity: 0.5;
+}
+#radio1 input {
+  height: 20px;
+  width: 20px;
+}
+
+#step2 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+
+#step3 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+#step4 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+#step5 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+#step6 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+#step7 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+#step8 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+#step9 h2 {
+  font-family: gilroy;
+  font-weight: 100;
+  color: #ff3c00;
+}
+
+.step2button {
+  position: relative;
+  color: #ffffff;
+  border: none;
+  margin-top: 20px;
+  background-color: #ff3c00;
+  font-family: gilroy;
+  font-size: 15px;
+  height: 5vh;
+  width: 8vw;
+}
+
+#step5center {
+  position: relative;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 3%);
+  height: 60vh;
+  width: 28vw;
+  /* background-color: black; */
+}
+.step5left {
+  position: relative;
+  margin-top: 5%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  width: 15vw;
+  /* background-color: blue; */
+}
+
+.step5right {
+  position: relative;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  width: 15vw;
+  /* background-color: rgb(136, 255, 0); */
+}
+
+#radio5 {
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 6vh;
+  width: 12vw;
+  border: 1px solid rgba(0, 0, 0, 0.407);
+}
+#inside5 {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 8vw;
+  /* background-color: rgb(255, 0, 64); */
+}
+#inside5 h3 {
+  font-size: 15px;
+  font-weight: 100;
+}
+#radio5 input {
+  position: relative;
+  height: 3vh;
+  width: 3vw;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+#viewAllCitiesBtn {
+  position: fixed;
+  color: #000;
+  left: 65%;
+  top: 80%;
+  font-size: 20px;
+  text-decoration: none;
+  z-index: 99999;
+}
+
+.step7center {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  height: 52vh;
+  width: 20vw;
+  /* background -color: aqua; */
+}
+#step7 h2 {
+  position: relative;
+  font-size: 25px;
+}
+.parentdropdown {
+  padding: 4px;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 11vh;
+  width: 20vw;
+  /* background-color: blue; */
+}
+.parentdropdown h5 {
+  position: relative;
+  font-weight: 100;
+  font-size: 17px;
+  color: #ff3c00;
+}
+#buisnesdetails {
+  position: relative;
+  height: 5vh;
+  background: none;
+  outline: none;
+  /* border-bottom: 1px solid black;/ */
+  width: 15vw;
+}
+.Additional {
+  position: relative;
+  top: 25px;
+  font-size: 12px;
+  height: 9vh;
+  width: 28vw;
+  /* background-color: aqua; */
+}
+
+@media screen and (max-width: 760px) {
+  #main {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+  }
+  #nav img {
+    position: fixed;
+    z-index: 9999;
+    height: 5vh;
+  }
+  #left {
+    position: relative;
+    height: 200%;
+    width: 100%;
+    /* background-color: rgb(89, 0, 0); */
+  }
+
+  #left svg {
+    position: absolute;
+    height: 70vh;
+    width: 100%;
+    top: 206px;
+    /* left: -1px; */
+  }
+
+  #right {
+    position: relative;
+    top: 30%;
+    height: 280%;
+    width: 100%;
+    background-color: #ff3c00;
+  }
+
+  #formdiv {
+    position: relative;
+    left: 50%;
+    border-radius: 10px;
+    height: 52vh;
+    width: 80vw;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 15px rgb(128, 128, 128);
+  }
+
+  #step1 {
+    position: relative;
+    padding: 6px;
+    /* background-color: red; */
+    height: 15vh;
+  }
+  #step1 h2 {
+    position: relative;
+    font-family: gilroy;
+    font-size: 15px;
+  }
+  #step1 input {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 0px rgb(128, 128, 128);
+    font-size: 12px;
+    margin-top: 20px;
+    outline: none;
+    position: relative;
+    height: 5vh;
+    width: 52vw;
+  }
+  #step1 button {
+    position: relative;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    background-color: #ff3c00;
+    font-family: gilroy;
+    font-size: 15px;
+    height: 5vh;
+    width: 20vw;
+  }
+
+  #step2 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  #radio1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 5vh;
+    width: 54vw;
+    border-radius: 5px;
+    /* background-color: red; */
+    border: 1px solid rgba(0, 0, 0, 0.341);
+  }
+  #radio1 input {
+    height: 15px;
+    width: 15px;
+  }
+  #inside1 {
+    position: relative;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+    width: 160px;
+    /* background-color: blue; */
+  }
+  #inside1 h3 {
+    position: relative;
+    font-size: 10px;
+    color: #ff3c00;
+    font-weight: 700;
+  }
+  #inside1 h6 {
+    position: relative;
+    font-size: 8px;
+    opacity: 0.5;
+  }
+  .step2button {
+    position: relative;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ff3c00;
+    font-family: gilroy;
+    font-size: 11px;
+    height: 5vh;
+    width: 17vw;
+  }
+  #step3 h2 {
+    position: relative;
+    font-size: 13px;
+  }
+  #step4 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  #step5 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  #step5center {
+    position: relative;
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 3%);
+    height: 40vh;
+    width: 78vw;
+    /* background-color: black; */
+  }
+  .step5left {
+    position: relative;
+    margin-top: 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 35vw;
+    /* background-color: blue; */
+  }
+
+  #radio5 {
+    position: relative;
+    padding: 7px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4vh;
+    width: 32vw;
+    border: 1px solid rgba(0, 0, 0, 0.407);
+  }
+  #inside5 {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25vw;
+    /* background-color: rgb(255, 0, 64); */
+  }
+  #inside5 h3 {
+    font-size: 12px;
+    font-weight: 100;
+  }
+  #radio5 input {
+    position: relative;
+    height: 4vh;
+    width: 4vw;
+  }
+
+  .step5right {
+    position: relative;
+    margin-top: 5%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    width: 35vw;
+    /* background-color: rgb(136, 255, 0); */
+  }
+  #step5btn {
+    position: relative;
+    bottom: 20px;
+  }
+  #viewAllCitiesBtn {
+    position: fixed;
+    color: #000;
+    left: 60%;
+    top: 90%;
+    font-size: 13px;
+    text-decoration: none;
+    z-index: 99999;
+  }
+  #step6 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  #step7 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  .parentdropdown {
+    padding: 4px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 11vh;
+    width: 70vw;
+    /* background-color: blue; */
+  }
+  .step7center {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+    height: 40vh;
+    width: 70vw;
+    /* background-color: aqua; */
+  }
+  .parentdropdown h5 {
+    position: relative;
+    font-weight: 100;
+    font-size: 10px;
+    color: #ff3c00;
+  }
+  .select7 {
+    position: relative;
+    width: 2;
+  }
+  #buisnesdetails {
+    position: relative;
+    height: 5vh;
+    background: none;
+    outline: none;
+    /* border-bottom: 1px solid black;/ */
+    width: 55vw;
+  }
+  #step7 {
+    position: relative;
+    bottom: 10px;
+  }
+  #step8 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  #step9 h2 {
+    position: relative;
+    font-size: 15px;
+  }
+  .Additional p {
+    position: relative;
+    top: 10px;
+    font-size: 10px;
+    width: 72vw;
+  }
+  #leftcontent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 50%;
+    /* bottom: 10%; */
+    left: 5%;
+    height: 40vh;
+    width: 92vw;
+    /* background-color: aqua; */
+  }
+
+  #leftcontent h5{
+    position: relative;
+    margin-top: 20px;
+  }
+  #leftcontent h2 {
+    position: relative;
+    color: #0031c5;
+    font-size: 35px;
+    line-height: 1;
+    font-family: gilroy;
+    width: 70vw;
+  }
+  #icons {
+    position: relative;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 15vh;
+    width: 91vw;
+    /* background-color: rgba(0, 0, 255, 0.679); */
+  }
+  .iconsdiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 10vh;
+    width: 30vw;
+    /* background-color: chartreuse; */
+  }
+ 
+  .iconsdiv i {
+    font-size: 40px;
+    color: #000;
+  }
+  .iconsdiv h6 {
+    position: relative;
+    font-weight: 100;
+    width: 7vw;
+    font-family: gilroy;
+    font-size: 10px;
+  }
+  #money {
+    position: relative;
+    text-align: right;
+    width: 10vh;
+  }
+}
